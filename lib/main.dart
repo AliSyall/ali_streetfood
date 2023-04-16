@@ -1,22 +1,17 @@
+import 'package:ali_streetfood/screen_On%20Boarding%20Screen%201.dart';
 import 'package:flutter/material.dart';
+void main() {
 
-void main() => runApp(MyApp());
-
+  runApp(MyApp());
+}
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Farooq sial'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home:HomeScreen(),
     );
   }
 }
