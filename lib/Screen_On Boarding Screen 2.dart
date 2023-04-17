@@ -1,9 +1,10 @@
+import 'package:ali_streetfood/Screen_On%20Boarding%20Screen%203.dart';
 import 'package:flutter/material.dart';
 
-import 'Screen_On Boarding Screen 2.dart';
+void main() {}
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreen2 extends StatelessWidget {
+  const HomeScreen2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,15 +36,15 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 child: Image(
                   image: AssetImage(
-                    'images/Group 18400.png',
+                    'images/purepng 2.png',
                   ),
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 30),
+              padding: const EdgeInsets.only(top: 75),
               child: Text(
-                'Get all the healthy recipes\n          that you need',
+                '   Get the exact nutrition\nvalue of everything you eat',
                 style: TextStyle(
                   fontFamily: 'Poppinsm',
                   fontSize: 19,
@@ -52,10 +53,10 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 20),
+              padding: const EdgeInsets.only(top: 30),
               child: Text(
-                'Whether you are losing or gaining. we\n'
-                'have all the recipes you’ll need.',
+                'We are updating our food database every \n    '
+                'minute to help you track your calories',
                 style: TextStyle(
                   fontSize: 15,
                   fontFamily: 'Poppinsr',
@@ -80,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
+                          builder: (context) => HomeScreen3(),
                         ),
                       );
                     },

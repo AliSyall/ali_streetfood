@@ -1,9 +1,10 @@
+import 'package:ali_streetfood/Screen_signup.dart';
 import 'package:flutter/material.dart';
 
 import 'Screen_On Boarding Screen 2.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreen3 extends StatelessWidget {
+  const HomeScreen3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 child: Image(
                   image: AssetImage(
-                    'images/Group 18400.png',
+                    'images/purepng 3.png',
                   ),
                 ),
               ),
@@ -43,7 +44,7 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 30),
               child: Text(
-                'Get all the healthy recipes\n          that you need',
+                'Get daily calorie target\nbased on your body weight',
                 style: TextStyle(
                   fontFamily: 'Poppinsm',
                   fontSize: 19,
@@ -54,8 +55,8 @@ class HomeScreen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 20),
               child: Text(
-                'Whether you are losing or gaining. we\n'
-                'have all the recipes you’ll need.',
+                'Set your target weight and select your\n'
+                'monthly schedule, and we’ill do the rest',
                 style: TextStyle(
                   fontSize: 15,
                   fontFamily: 'Poppinsr',
@@ -67,12 +68,8 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.only(top: 70),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => HomeScreen2(),
-                    ),
-                  );
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Signup()));
                 },
                 child: Container(
                   child: GestureDetector(
@@ -80,7 +77,7 @@ class HomeScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
+                          builder: (context) => HomeScreen3(),
                         ),
                       );
                     },
