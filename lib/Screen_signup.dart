@@ -17,32 +17,44 @@ class Signup extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: Stack(
+          child: Column(
             children: [
-              Positioned(
-                left: 50,
-                child: Container(
-                  width: 83,
-                  height: 83,
-                  decoration: BoxDecoration(
-                      color: Colors.yellow, shape: BoxShape.circle),
-                ),
-              ),
-              Positioned(
-                left: 85,
-                top: 20,
-                child: Container(
-                  child: Text(
-                    'Create a New Account',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 21,
-                      fontFamily: 'Poppinsr',
+              Stack(
+                children: [
+                  Positioned(
+                    left: 50,
+                    child: Container(
+                      width: 83,
+                      height: 83,
+                      decoration: BoxDecoration(
+                          color: Colors.yellow, shape: BoxShape.circle),
                     ),
                   ),
+                  Positioned(
+                    left: 87,
+                    top: 25,
+                    child: Container(
+                      child: Text(
+                        'Create a New Account',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 21,
+                          fontFamily: 'Poppinsr',
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Text(
+                'Create an account so you can see  our\n latest Racipes',
+                style: TextStyle(
+                  color: Color(0xffADAAAA),
+                  fontFamily: 'Poppinsr',
+                  fontSize: 12,
                 ),
               ),
-
+              TextField()
             ],
           ),
         ),

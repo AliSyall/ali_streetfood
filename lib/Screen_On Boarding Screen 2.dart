@@ -71,14 +71,24 @@ class HomeScreen2 extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeScreen2(),
+                      builder: (context) => HomeScreen3(),
                     ),
                   );
                 },
                 child: Container(
-                  child: Icon(
-                    Icons.arrow_forward,
-                    color: Color(0xff000000),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => HomeScreen3(),
+                        ),
+                      );
+                    },
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: Color(0xff000000),
+                    ),
                   ),
                   height: 60,
                   width: 60,

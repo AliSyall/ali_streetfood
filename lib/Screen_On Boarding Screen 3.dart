@@ -68,8 +68,12 @@ class HomeScreen3 extends StatelessWidget {
               padding: const EdgeInsets.only(top: 70),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Signup()));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Signup(),
+                    ),
+                  );
                 },
                 child: Container(
                   child: Icon(
