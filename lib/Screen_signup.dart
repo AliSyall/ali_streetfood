@@ -9,43 +9,42 @@ class Signup extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          elevation: 0,
           backgroundColor: Colors.white,
+          elevation: 0,
           leading: Icon(
             Icons.arrow_back_ios,
             color: Colors.black,
           ),
         ),
-        body: Stack(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 10, left: 20),
-              child: Container(
-                height: 100,
-                width: 100,
-                decoration: BoxDecoration(
-                  color: Colors.yellow,
-                  shape: BoxShape.circle,
+        body: Center(
+          child: Stack(
+            children: [
+              Positioned(
+                left: 50,
+                child: Container(
+                  width: 83,
+                  height: 83,
+                  decoration: BoxDecoration(
+                      color: Colors.yellow, shape: BoxShape.circle),
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Stack(
-                    children: [
-                      Container(
-                        child: Text(
-                          'Create a New Account',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 21,
-                          ),
-                        ),
-                      ),
-                    ],
+              ),
+              Positioned(
+                left: 85,
+                top: 20,
+                child: Container(
+                  child: Text(
+                    'Create a New Account',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 21,
+                      fontFamily: 'Poppinsr',
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+
+            ],
+          ),
         ),
       ),
     );

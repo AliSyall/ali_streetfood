@@ -75,19 +75,9 @@ class HomeScreen extends StatelessWidget {
                   );
                 },
                 child: Container(
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
-                        ),
-                      );
-                    },
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: Color(0xff000000),
-                    ),
+                  child: Icon(
+                    Icons.arrow_forward,
+                    color: Color(0xff000000),
                   ),
                   height: 60,
                   width: 60,
