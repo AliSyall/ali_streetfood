@@ -65,7 +65,7 @@ class HomeScreen2 extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 70),
+              padding: const EdgeInsets.only(top: 80),
               child: GestureDetector(
                 onTap: () {
                   Navigator.push(

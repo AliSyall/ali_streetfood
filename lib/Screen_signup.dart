@@ -17,116 +17,33 @@ class Signup extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: Column(
+          child: Stack(
             children: [
-              Stack(
-                children: [
-                  Positioned(
-                    left: 40,
-                    child: Container(
-                      width: 100,
-                      height: 100,
-                      decoration:
-                      BoxDecoration(color: Colors.yellow, shape: BoxShape.circle),
-                    ),
-                  ),
-                  Positioned(
-                    left: 90,
-                    top: 33,
-                    child: Container(
-                      child: Text('Create a New Account',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        color: Colors.black,
-                        fontSize: 21,
-                        fontFamily: 'Poppinsr',
-                      ),
-                      ),
-                    ),
-                  ),
-                ],
+              Positioned(
+                left: 40,
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                      color: Colors.yellow, shape: BoxShape.circle),
+                ),
               ),
-              Text('Create an account so you can see  our '),
+              Positioned(
+                left: 90,
+                top: 33,
+                child: Text(
+                  'Create a New Account',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    color: Colors.black,
+                    fontSize: 21,
+                    fontFamily: 'Poppinsr',
+                  ),
+                ),
+              ),
             ],
           ),
         ),
-        // body: Center(
-        //   child: Column(
-        //     children: [
-        //       Stack(
-        //         children: [
-        //           Positioned(
-        //             left: 40,
-        //             child: Container(
-        //               width: 100,
-        //               height: 100,
-        //               decoration: BoxDecoration(
-        //                 color: Colors.yellow,
-        //                 shape: BoxShape.circle,
-        //               ),
-        //             ),
-        //           ),
-        //           Positioned(
-        //             top: 33,
-        //             left: 90,
-        //             child: Container(
-        //               child: Text('Create a New Account',
-        //               style: TextStyle(
-        //                 fontWeight: FontWeight.w600,
-        //                 color: Color(0xff000000),
-        //                 fontSize: 21,
-        //                 fontFamily: 'Poppinsr',
-        //               ),
-        //               ),
-        //               ),
-        //             ),
-        //         ],
-        //       ),
-        //     ],
-        //   ),
-        // ),
-        // body: Center(
-        //   child: Column(
-        //     children: [
-        //       Stack(
-        //         children: [
-        //           Positioned(
-        //             left: 50,
-        //             child: Container(
-        //               width: 83,
-        //               height: 83,
-        //               decoration: BoxDecoration(
-        //                   color: Colors.yellow, shape: BoxShape.circle),
-        //             ),
-        //           ),
-        //           Positioned(
-        //             left: 87,
-        //             top: 25,
-        //             child: Container(
-        //               child: Text(
-        //                 'Create a New Account',
-        //                 style: TextStyle(
-        //                   color: Colors.black,
-        //                   fontSize: 21,
-        //                   fontFamily: 'Poppinsr',
-        //                 ),
-        //               ),
-        //             ),
-        //           ),
-        //         ],
-        //       ),
-        //       Text(
-        //         'Create an account so you can see  our\n latest Racipes',
-        //         style: TextStyle(
-        //           color: Color(0xffADAAAA),
-        //           fontFamily: 'Poppinsr',
-        //           fontSize: 12,
-        //         ),
-        //       ),
-        //       TextField()
-        //     ],
-        //   ),
-        // ),
       ),
     );
   }
