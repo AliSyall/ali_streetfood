@@ -1,9 +1,11 @@
-import 'package:ali_streetfood/screen_On%20Boarding%20Screen%201.dart';
 import 'package:flutter/material.dart';
-void main() {
 
+import 'Screen_OnBoarding1.dart';
+
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:HomeScreen(),
+      home: OnBoarding1(),
     );
   }
 }
