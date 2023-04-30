@@ -1,4 +1,5 @@
 import 'package:ali_streetfood/Screen_OnBoarding3.dart';
+import 'package:ali_streetfood/Screen_signup.dart';
 import 'package:flutter/material.dart';
 
 class OnBoarding2 extends StatelessWidget {
@@ -16,12 +17,17 @@ class OnBoarding2 extends StatelessWidget {
             Center(
               child: Padding(
                 padding: EdgeInsets.only(right: 15),
-                child: Text(
-                  'Skip',
-                  style: TextStyle(
-                    color: Color(0xff999999),
-                    fontFamily: 'Poppinsm',
-                    fontSize: 15,
+                child: GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Signup()));
+                  },
+                  child: Text(
+                    'Skip',
+                    style: TextStyle(
+                      color: Color(0xff999999),
+                      fontFamily: 'Poppinsm',
+                      fontSize: 15,
+                    ),
                   ),
                 ),
               ),

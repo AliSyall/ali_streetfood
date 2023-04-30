@@ -1,3 +1,4 @@
+import 'package:ali_streetfood/Screen_signup.dart';
 import 'package:flutter/material.dart';
 
 class OnBoarding3 extends StatelessWidget {
@@ -11,21 +12,7 @@ class OnBoarding3 extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          actions: [
-            Center(
-              child: Padding(
-                padding: EdgeInsets.only(right: 15),
-                child: Text(
-                  'Skip',
-                  style: TextStyle(
-                    color: Color(0xff999999),
-                    fontFamily: 'Poppinsm',
-                    fontSize: 15,
-                  ),
-                ),
-              ),
-            ),
-          ],
+          actions: [],
         ),
         body: Column(
           children: [
@@ -70,15 +57,21 @@ class OnBoarding3 extends StatelessWidget {
             ),
             Expanded(
               flex: 2,
-              child: SizedBox(
-                child: Center(
+              child: Center(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Signup()),
+                    );
+                  },
                   child: Container(
                     child: Center(
                       child: Text(
                         'GET STARTED',
                         style: TextStyle(
                           fontSize: 15,
-                          fontFamily:  'Poppinssb',
+                          fontFamily: 'Poppinssb',
                         ),
                       ),
                     ),
@@ -91,7 +84,7 @@ class OnBoarding3 extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

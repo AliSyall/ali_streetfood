@@ -63,6 +63,8 @@ flutter:
     - images/purepng 2.png
     - images/Group 18400.png
     - images/purepng 3.png
+    - images/google.png
+    - images/forget.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -76,12 +78,15 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Poppinsm
+    - family: Poppins semi bold
+      fonts:
+        - asset: fonts/Poppins-SemiBold.ttf
+    - family: Poppins regular
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+    - family: Poppins medium
       fonts:
         - asset: fonts/Poppins-Medium.ttf
-    - family: Poppinssb
-fonts:
-        - asset: fonts/Poppins-SemiBold.ttf
 
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
